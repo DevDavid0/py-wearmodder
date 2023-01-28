@@ -19,7 +19,7 @@ def processFile(path:str):
                 return
         text = processRange(text, "dip", 2, 720);
         text = processRange(text, "sp", 2, 240);
-        text=text.replace(">?android:actionBarSize<", ">28.0dip<").replace("\"?actionBarSize\"", "\"28.0dip\"")
+        text=text.replace(">?android:actionBarSize<", ">28.0dip<").replace("\"?actionBarSize\"", "\"20.0dip\"")
         with open(path,'w') as f:
             f.write(text)
         
